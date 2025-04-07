@@ -1,3 +1,4 @@
+ipykernel
 langgraph>=0.2.55
 langchain>=0.3.23
 aiohttp>=3.11.16
