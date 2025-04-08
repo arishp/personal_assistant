@@ -19,7 +19,7 @@ from langchain_community.retrievers import ArxivRetriever
 from langchain_community.utilities.pubmed import PubMedAPIWrapper
 from langsmith import traceable
 
-from app.state import Section
+from backend.state import Section
 
 
 def get_config_value(value):

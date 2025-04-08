@@ -1,7 +1,7 @@
 # from IPython.display import Image, display
 from langgraph.types import Command
 from langgraph.checkpoint.memory import MemorySaver
-from app.graph import builder
+from backend.graph import builder
 from dotenv import load_dotenv
 import uuid 
 # from IPython.display import Markdown
