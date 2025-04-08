@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Assistant</title>
+</head>
+<body>
+  <h1>Ask the Deep Research</h1>
+  <input type="text" id="userInput" placeholder="Enter your query" />
+  <button onclick="sendQuery()">Write Report</button>
+  <pre id="response"></pre>
+
+  <script>
+    async function sendQuery() {
+      const input = document.getElementById("userInput").value;
+      const res = await fetch("http://localhost:8000/query", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ input_text: input })
+      });
+      const data = await res.json();
+      document.getElementById("response").innerText = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
