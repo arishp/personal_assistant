@@ -10,6 +10,9 @@ beautifulsoup4==4.13.3
 langchain-community>=0.3.9
 langchain-google-genai>=2.1.2
 streamlit>=1.41.1
+fastapi>=0.115.12
+uvicorn>=0.34.0
+
 # langchain-openai>=0.3.7
 # langchain-anthropic>=0.3.9
 # openai>=1.61.0

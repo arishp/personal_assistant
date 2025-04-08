@@ -1,10 +1,9 @@
 # from IPython.display import Image, display
 from langgraph.types import Command
 from langgraph.checkpoint.memory import MemorySaver
-from backend.graph import builder
+from app.graph import builder
 from dotenv import load_dotenv
 import uuid 
-# from IPython.display import Markdown
 import streamlit as st
 import asyncio
 
